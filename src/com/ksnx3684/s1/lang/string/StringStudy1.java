@@ -2,6 +2,35 @@ package com.ksnx3684.s1.lang.string;
 import java.util.Scanner;
 public class StringStudy1 {
 	
+	public void splitTest() {
+		String name = "12 13 14 15 16";
+		String[] result = name.split(" ");
+		for(int i = 0; i < result.length; i++)
+			System.out.println(result[i]);
+	}
+	
+	public void valueTest() {
+		int num = 1000;
+		String result = String.valueOf(num);
+		System.out.println(result);
+	}
+	
+	public void caseTest() {
+		String title = "Flay to The Moon";
+		String lower = title.toLowerCase();
+		String upper = title.toUpperCase();
+		System.out.println(lower);
+		System.out.println(upper);
+	}
+	
+	public void replaceTest() {
+		String title = "Fly to The Moon";
+		// 참조변수명.멤버메서드명()
+		String result = title.replace("Fly", "Run");
+		System.out.println(title);
+		System.out.println(result);
+	}
+	
 	public void subStringEx1() {
 		// 키보드로부터 업로드할 파일명을 입력
 		// a.txt, b.pdf, ksnx.jpg...
