@@ -2,6 +2,12 @@ package com.ksnx3684.s1.lang.wrapper;
 import java.util.Scanner;
 public class WrapperEx1 {
 	
+	private Scanner sc;
+	
+	public WrapperEx1() {
+		this.sc = new Scanner(System.in);
+	}
+	
 	public void ex2() {
 		// 주민등록번호 입력
 		// 9  7  1  2  2  4 - 1  2  3  4  5  6  7 - 마지막 번호는 체크용 번호
@@ -18,7 +24,6 @@ public class WrapperEx1 {
 		// 만약에 결과값이 두자리라면 결과값을 다시 10으로 나누어서 그 나머지 값을 체크용 번호와 같은지 비교
 		// 10 / 10 = 0 == 7
 		// 같으면 정상적인 주민번호, 아니면 잘못된 번호
-		Scanner sc = new Scanner(System.in);
 		System.out.println("주민번호 입력");
 		int[] result1 = new int[6];
 		int[] result2 = new int[2];
@@ -67,7 +72,6 @@ public class WrapperEx1 {
 		// 6 - 8 : 여름
 		// 9 - 11 : 가을
 		// 12 - 2 : 겨울
-		Scanner sc = new Scanner(System.in);
 		System.out.println("주민번호 입력");
 		String number = sc.next();
 		int age;
