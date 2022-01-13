@@ -1,4 +1,4 @@
-package com.ksnx3684.s3.ex1;
+package com.ksnx3684.s3.ex1.member;
 
 import java.util.ArrayList;
 
